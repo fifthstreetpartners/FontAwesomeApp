@@ -4,8 +4,16 @@
              xmlns:local="clr-namespace:FontAwesomeApp"
              x:Class="FontAwesomeApp.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+	<StackLayout Orientation="Vertical" Margin="10">
+		<Button Text="&#xf11a;" HeightRequest="100" BackgroundColor="DarkRed" TextColor="White" FontSize="36">
+			<Button.FontFamily>
+				<OnPlatform x:TypeArguments="x:String" Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+			</Button.FontFamily>
+		</Button>
+		<Label Text="&#xf11a;" HeightRequest="100" BackgroundColor="White" TextColor="Black" FontSize="36">
+			<Label.FontFamily>
+				<OnPlatform x:TypeArguments="x:String" Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" iOS="Font Awesome 5 Free" WinPhone="Assets/fa-regular-400.ttf#Font Awesome 5 Free" />
+			</Label.FontFamily>
+		</Label>
+	</StackLayout>
 </ContentPage>
